@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        body{
+            margin:0;
+            padding:0;
+        }
+        .nav img{
+            float: left;
+            width: 55px;
+            height: 55px;
+            background:rgb(174, 174, 174);
+            border-radius:50%;
+        }
+        h1{
+            padding-left:1em ;
+            padding-right: 41em;
+        }
+        .nav{
+            display:flex;
+            background: #000000;  
+background: -webkit-linear-gradient(to right, #434343, #000000); 
+background: linear-gradient(to right, #434343, #000000);
+height: 55px;
+        }
+        .nav a{
+            float:left;
+            color:white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .nav a:hover{
+            background-color:white;
+            color:black;
+        }
+        .nav a.active{
+            background-color:whitesmoke;
+            color:black
+        }
+        .intro{
+            background-color: white;
+            background-image: url(coverphoto.jpg);
+            background-size: cover;
+            height: 800px;
+        }
+        button{
+            padding-bottom: 10em;
+            background-color:black;
+            color: white;
+            padding: 10px 20px;
+            border:none;
+            font-size: 16px;
+            border-radius: 25px;
+        }
+        .row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+  box-shadow:
+  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.006),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.008),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.01),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.012),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.014),
+  100px 100px 80px rgba(0, 0, 0, 0.02)
+;
+ 
+}
+.checked {
+  color: orange;
+}
+.main{
+    background: #8e9eab; 
+background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);
+background: linear-gradient(to right, #eef2f3, #8e9eab); 
+
+
+}
+footer {
+  background: #000000;  
+background: -webkit-linear-gradient(to right, #434343, #000000); 
+background: linear-gradient(to right, #434343, #000000);
+  color: #fff;
+  padding: 2em 0;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  padding: 1em 0;
+}
+
+footer nav ul {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer nav ul li {
+  display: inline-block;
+  margin: 0 1em;
+}
+
+footer nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .social-icons {
+  display: inline-block;
+  list-style: none;
+  margin: 1em 0 0;
+  padding: 0;
+}
+
+footer .social-icons li {
+  display: inline-block;
+  margin: 0 1em;
+}
+
+footer .social-icons li a {
+  color: #fff;
+  font-size: 1.5em;
+}body::-webkit-scrollbar {
+    width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px black;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 20px;
+  outline: 1px solid whitesmoke;
+}
+    </style>
+    <title>WEBTOONS</title>
+</head>
+<body>
+    <div class="nav">
+          <img src="logo.png" alt="logo">
+          <h1 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;font-size: 20px;color: white;padding-top: 5px;"><i>WEBTOONS</i></h1>
+          <a class="active" href="home.html">Home</a>
+          <a href="signup.html">SignUp</a>
+          <a href="aboutus.html">About Us</a>
+          <a href="terms.html">Terms of Service</a>
+    </div>
+    <div class="intro">
+        <center><nav class="navbar navbar-light bg-light">
+            <form class="form-inline" style="padding-top:100px;background-color: rgba(0, 0, 0, 0.488);">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="padding:10px 50px;border-radius: 25px;border: none;">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </nav></center>
+           <center><header style="font-size:60px;padding-top: 150px;color:white;background-color: rgba(0, 0, 0, 0.488);">Welcome to The Comic World</header></center>
+        <center><header style="font-size:20px;padding-bottom: 40px;padding-top:40px;color:white;background-color: rgba(0, 0, 0, 0.488);">In this world, there are very few people who actually trust each other.<br>Let’s value our lives.</header></center>
+        <div class="button" style="padding-bottom: 280px;background-color: rgba(0, 0, 0, 0.488);"><center><a href="subscribe.html"><button>Subscribe</button></a></center></div>
+    </div>
+    <center><div class="main">
+        <h3 style="font-size: 36px;font-family: lora,serif;margin: 0;padding-bottom: 20px;padding-top: 20px;background: #ED213A; 
+        background: -webkit-linear-gradient(to right, #93291E, #ED213A);  
+        background: linear-gradient(to right, #93291E, #ED213A);color:white">Marvel Comics</h3>
+    <div class="row" style="padding-top:20px;">
+        <div class="column"data-aos="zoom-in">
+          <a href="book1.html"><img src="book1.jpg" alt="book1" style="width:50%;border-radius: 10%;box-shadow:
+          0.2px 0px 6.4px rgba(0, 0, 0, 0.034),
+          2.9px 0px 12.2px rgba(0, 0, 0, 0.042),
+          9.4px 0px 17.6px rgba(0, 0, 0, 0.046),
+          22px 0px 23.4px rgba(0, 0, 0, 0.05),
+          46.2px 0px 32.5px rgba(0, 0, 0, 0.058),
+          108px 0px 64px rgba(0, 0, 0, 0.08);"></a>
+          <h4 style="font-size: 20px;font-family: lora,sans-serif;">THE AVENGERS<BR>EARTHS MIGHTIEST HEROES<br><br>Rating : 4.0</h4>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+        </div>
+        <div class="column"data-aos="zoom-in">
+          <a href="book2.html"><img src="book2.jpeg" alt="book2" style="width:50%;border-radius: 10%;box-shadow:
+          0.2px 0px 6.4px rgba(0, 0, 0, 0.034),
+          2.9px 0px 12.2px rgba(0, 0, 0, 0.042),
+          9.4px 0px 17.6px rgba(0, 0, 0, 0.046),
+          22px 0px 23.4px rgba(0, 0, 0, 0.05),
+          46.2px 0px 32.5px rgba(0, 0, 0, 0.058),
+          108px 0px 64px rgba(0, 0, 0, 0.08)
+        ;"></a>
+          <h4 style="font-size: 20px;font-family: lora,sans-serif;">THE MIGHTY THOR<BR>GOD VS GOD BATTLE<br><br>Rating : 3.5</h4>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o checked"></span>
+<span class="fa fa-star"></span>
+        </div>
+        <div class="column"data-aos="zoom-in">
+          <a href="book3.html"><img src="book3.jpg" alt="book3" style="width:50%;border-radius: 10%;box-shadow:
+          0.2px 0px 6.4px rgba(0, 0, 0, 0.034),
+          2.9px 0px 12.2px rgba(0, 0, 0, 0.042),
+          9.4px 0px 17.6px rgba(0, 0, 0, 0.046),
+          22px 0px 23.4px rgba(0, 0, 0, 0.05),
+          46.2px 0px 32.5px rgba(0, 0, 0, 0.058),
+          108px 0px 64px rgba(0, 0, 0, 0.08)
+        ;"></a>
+          <h4 style="font-size: 20px;font-family: lora,sans-serif;">THE AMAZING SPIDERMAN<br>SPIDERMAN NO MORE<br><br>Rating : 3.0</h4>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+        </div>
+      </div>
+      <div class="row" style="padding-top: 20px;">
+        <div class="column"data-aos="zoom-in">
+          <a href="book4.html"><img src="book4.jpg" alt="book4" style="width:50%;border-radius: 10%;box-shadow:
+            0.2px 0px 6.4px rgba(0, 0, 0, 0.034),
+            2.9px 0px 12.2px rgba(0, 0, 0, 0.042),
+            9.4px 0px 17.6px rgba(0, 0, 0, 0.046),
+            22px 0px 23.4px rgba(0, 0, 0, 0.05),
+            46.2px 0px 32.5px rgba(0, 0, 0, 0.058),
+            108px 0px 64px rgba(0, 0, 0, 0.08)
+          ;"></a>
+          <h4 style="font-size: 20px;font-family: lora,sans-serif;">CAPITAN AMERICA<br>IN REGALO<br><br>Rating : 4.5</h4>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o checked"></span>
+        </div>
+        <div class="column"data-aos="zoom-in">
+          <a href="book5.html"><img src="book5.webp" alt="book5" style="width:50%;border-radius: 10%;box-shadow:
+            0.2px 0px 6.4px rgba(0, 0, 0, 0.034),
+            2.9px 0px 12.2px rgba(0, 0, 0, 0.042),
+            9.4px 0px 17.6px rgba(0, 0, 0, 0.046),
+            22px 0px 23.4px rgba(0, 0, 0, 0.05),
+            46.2px 0px 32.5px rgba(0, 0, 0, 0.058),
+            108px 0px 64px rgba(0, 0, 0, 0.08)
+          ;"></a>
+          <h4 style="font-size: 20px;font-family: lora,sans-serif;">IRON MAN<br>DEMON IN A BOTTLE<br><br>Rating : 4.0</h4>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+        </div>
+        <div class="column"data-aos="zoom-in">
+          <a href="book6.html"><img src="book6.webp" alt="book6" style="width:50%;border-radius: 10%;box-shadow:
+          0.2px 0px 6.4px rgba(0, 0, 0, 0.034),
+          2.9px 0px 12.2px rgba(0, 0, 0, 0.042),
+          9.4px 0px 17.6px rgba(0, 0, 0, 0.046),
+          22px 0px 23.4px rgba(0, 0, 0, 0.05),
+          46.2px 0px 32.5px rgba(0, 0, 0, 0.058),
+          108px 0px 64px rgba(0, 0, 0, 0.08)
+        ;"></a>
+          <h4 style="font-size: 20px;font-family: lora,sans-serif;">MOON KNIGHT<br>DEVILS REIGN TIE-IN<br><br>Rating : 3.5</h4>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o checked"></span>
+<span class="fa fa-star"></span>
+        </div>
+      </div>
+      <h3 style="font-size: 36px;font-family: lora,serif;margin: 0;padding-bottom: 20px;padding-top: 20px;background: #396afc;  
+      background: -webkit-linear-gradient(to right, #2948ff, #396afc); 
+      background: linear-gradient(to right, #2948ff, #396afc);color:white;
+      ">DC Comics</h3>
+      <div class="row" style="padding-top: 20px;">
+        <div class="column"data-aos="zoom-in">
+          <a href="book7.html"><img src="book7.jpg" alt="book7" style="width:50%;border-radius: 10%;"></a>
+          <h4 style="font-size: 20px;font-family: lora,sans-serif;">SUPERMAN<br>MAN OF STEEL<br><br>Rating : 4.5</h4>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o checked"></span>
+        </div>
+        <div class="column"data-aos="zoom-in">
+          <a href="book8.html"><img src="book8.jpg" alt="book8" style="width:50%;border-radius: 10%;box-shadow:
+            0.2px 0px 6.4px rgba(0, 0, 0, 0.034),
+            2.9px 0px 12.2px rgba(0, 0, 0, 0.042),
+            9.4px 0px 17.6px rgba(0, 0, 0, 0.046),
+            22px 0px 23.4px rgba(0, 0, 0, 0.05),
+            46.2px 0px 32.5px rgba(0, 0, 0, 0.058),
+            108px 0px 64px rgba(0, 0, 0, 0.08)
+          ;"></a>
+          <h4 style="font-size: 20px;font-family: lora,sans-serif;">BATMAN<br>DCEASED<br><br>Rating : 3.0</h4>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+        </div>
+        <div class="column"data-aos="zoom-in">
+          <a href="book9.html"><img src="book9.jpg" alt="book9" style="width:50%;border-radius: 10%;box-shadow:
+            0.2px 0px 6.4px rgba(0, 0, 0, 0.034),
+            2.9px 0px 12.2px rgba(0, 0, 0, 0.042),
+            9.4px 0px 17.6px rgba(0, 0, 0, 0.046),
+            22px 0px 23.4px rgba(0, 0, 0, 0.05),
+            46.2px 0px 32.5px rgba(0, 0, 0, 0.058),
+            108px 0px 64px rgba(0, 0, 0, 0.08)
+          ;"></a>
+          <h4 style="font-size: 20px;font-family: lora,sans-serif;">WONDER WOMAN<br>VOLUME 3<br><br>Rating : 3.5</h4>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o checked"></span>
+<span class="fa fa-star"></span>
+        </div>
+      </div>
+      <div class="row" style="padding-top: 20px;">
+        <div class="column"data-aos="zoom-in">
+          <a href="book10.html"><img src="book10.jpg" alt="book10" style="width:50%;border-radius: 10%;box-shadow:
+            0.2px 0px 6.4px rgba(0, 0, 0, 0.034),
+            2.9px 0px 12.2px rgba(0, 0, 0, 0.042),
+            9.4px 0px 17.6px rgba(0, 0, 0, 0.046),
+            22px 0px 23.4px rgba(0, 0, 0, 0.05),
+            46.2px 0px 32.5px rgba(0, 0, 0, 0.058),
+            108px 0px 64px rgba(0, 0, 0, 0.08)
+          ;"></a>
+          <h4 style="font-size: 20px;font-family: lora,sans-serif;">GREEN LANTERNS<br>REBIRTH<br><br>Rating : 3.5</h4>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o checked"></span>
+<span class="fa fa-star"></span>
+        </div>
+        <div class="column" data-aos="zoom-in">
+          <a href="book11.html"><img src="book11.jpg" alt="book11" style="width:50%;border-radius: 10%;box-shadow:
+            0.2px 0px 6.4px rgba(0, 0, 0, 0.034),
+            2.9px 0px 12.2px rgba(0, 0, 0, 0.042),
+            9.4px 0px 17.6px rgba(0, 0, 0, 0.046),
+            22px 0px 23.4px rgba(0, 0, 0, 0.05),
+            46.2px 0px 32.5px rgba(0, 0, 0, 0.058),
+            108px 0px 64px rgba(0, 0, 0, 0.08)
+          ;"></a>
+          <h4 style="font-size: 20px;font-family: lora,sans-serif;">BLACK ADAM<br>THE JUSTICE SOCIETY<br><br>Rating : 3.0</h4>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+        </div>
+        <div class="column" data-aos="zoom-in">
+          <a href="book12.html"><img src="book12.webp" alt="book12" style="width:50%;border-radius: 10%;box-shadow:
+            0.2px 0px 6.4px rgba(0, 0, 0, 0.034),
+            2.9px 0px 12.2px rgba(0, 0, 0, 0.042),
+            9.4px 0px 17.6px rgba(0, 0, 0, 0.046),
+            22px 0px 23.4px rgba(0, 0, 0, 0.05),
+            46.2px 0px 32.5px rgba(0, 0, 0, 0.058),
+            108px 0px 64px rgba(0, 0, 0, 0.08)
+          ;"></a>
+          <h4 style="font-size: 20px;font-family: lora,sans-serif;">BATMAN <br>THE KILLING JOKE<br><br>Rating : 4.5</h4>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o checked"></span>
+        </div>
+      </div>
+      <h3 style="font-size: 36px;font-family: lora,serif;margin: 0;padding-bottom: 20px;padding-top:20px;background: #FF4E50; 
+      background: -webkit-linear-gradient(to right, #F9D423, #FF4E50);
+      background: linear-gradient(to right, #F9D423, #FF4E50);color:white;
+      ">Kodansha Comics</h3>
+      <div class="row" style="padding-top: 20px;">
+        <div class="column" data-aos="zoom-in">
+          <a href="book13.html"><img src="book13.webp" alt="book13" style="width:50%;border-radius: 10%;box-shadow:
+            0.2px 0px 6.4px rgba(0, 0, 0, 0.034),
+            2.9px 0px 12.2px rgba(0, 0, 0, 0.042),
+            9.4px 0px 17.6px rgba(0, 0, 0, 0.046),
+            22px 0px 23.4px rgba(0, 0, 0, 0.05),
+            46.2px 0px 32.5px rgba(0, 0, 0, 0.058),
+            108px 0px 64px rgba(0, 0, 0, 0.08)
+          ;"></a>
+          <h4 style="font-size: 20px;font-family: lora,sans-serif;">AKIRA<br>KATSUHIRO OTOMO<br><br>Rating : 4.0</h4>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+        </div>
+        <div class="column"data-aos="zoom-in">
+          <a href="book14.html"><img src="book14.jpg" alt="book14" style="width:50%;border-radius: 10%;box-shadow:
+            0.2px 0px 6.4px rgba(0, 0, 0, 0.034),
+            2.9px 0px 12.2px rgba(0, 0, 0, 0.042),
+            9.4px 0px 17.6px rgba(0, 0, 0, 0.046),
+            22px 0px 23.4px rgba(0, 0, 0, 0.05),
+            46.2px 0px 32.5px rgba(0, 0, 0, 0.058),
+            108px 0px 64px rgba(0, 0, 0, 0.08)
+          ;"></a>
+          <h4 style="font-size: 20px;font-family: lora,sans-serif;">ATTACK ON TITANS<br><br><br>Rating : 3.5</h4>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o checked"></span>
+<span class="fa fa-star"></span>
+        </div>
+        <div class="column"data-aos="zoom-in">
+          <a href="book15.html"><img src="book15.jpg" alt="book15" style="width:50%;border-radius: 10%;box-shadow:
+            0.2px 0px 6.4px rgba(0, 0, 0, 0.034),
+            2.9px 0px 12.2px rgba(0, 0, 0, 0.042),
+            9.4px 0px 17.6px rgba(0, 0, 0, 0.046),
+            22px 0px 23.4px rgba(0, 0, 0, 0.05),
+            46.2px 0px 32.5px rgba(0, 0, 0, 0.058),
+            108px 0px 64px rgba(0, 0, 0, 0.08)
+          ;"></a>
+          <h4 style="font-size: 20px;font-family: lora,sans-serif;">SAILOR MOON<br>DIE METAMORPHOSE<br><br>Rating : 4.5</h4>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o checked"></span>
+        </div>
+      </div>
+      <h3 style="font-size: 36px;font-family: lora,serif;margin: 0;padding-bottom: 20px;padding-top:20px;background: #870000; 
+      background: -webkit-linear-gradient(to right, #190A05, #870000); 
+      background: linear-gradient(to right, #190A05, #870000);color:white; 
+      ">Viz Media</h3>
+      <div class="row" style="padding-top: 20px;">
+        <div class="column"data-aos="zoom-in">
+          <a href="book16.html"><img src="book16.jpg" alt="book16" style="width:50%;border-radius: 10%;box-shadow:
+            0.2px 0px 6.4px rgba(0, 0, 0, 0.034),
+            2.9px 0px 12.2px rgba(0, 0, 0, 0.042),
+            9.4px 0px 17.6px rgba(0, 0, 0, 0.046),
+            22px 0px 23.4px rgba(0, 0, 0, 0.05),
+            46.2px 0px 32.5px rgba(0, 0, 0, 0.058),
+            108px 0px 64px rgba(0, 0, 0, 0.08)
+          ;"></a>
+          <h4 style="font-size: 20px;font-family: lora,sans-serif;">DEATH NOTE<br>STORY BY TSUGUMI DHBA<br><br><br>Rating : 4.5</h4>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o checked"></span>
+        </div>
+        <div class="column"data-aos="zoom-in">
+          <a href="book17.html"><img src="book17.jpg" alt="book17" style="width:50%;border-radius: 10%;box-shadow:
+            0.2px 0px 6.4px rgba(0, 0, 0, 0.034),
+            2.9px 0px 12.2px rgba(0, 0, 0, 0.042),
+            9.4px 0px 17.6px rgba(0, 0, 0, 0.046),
+            22px 0px 23.4px rgba(0, 0, 0, 0.05),
+            46.2px 0px 32.5px rgba(0, 0, 0, 0.058),
+            108px 0px 64px rgba(0, 0, 0, 0.08)
+          ;"></a>
+          <h4 style="font-size: 20px;font-family: lora,sans-serif;"><br>JUJUTSU KAISEN<br>STORY BY GEGE AKUTAMI<br><br>Rating : 5.0</h4>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+        </div>
+        <div class="column"data-aos="zoom-in">
+          <a href="book18.html"><img src="book18.jpg" alt="book18" style="width:50%;border-radius: 10%;box-shadow:
+            0.2px 0px 6.4px rgba(0, 0, 0, 0.034),
+            2.9px 0px 12.2px rgba(0, 0, 0, 0.042),
+            9.4px 0px 17.6px rgba(0, 0, 0, 0.046),
+            22px 0px 23.4px rgba(0, 0, 0, 0.05),
+            46.2px 0px 32.5px rgba(0, 0, 0, 0.058),
+            108px 0px 64px rgba(0, 0, 0, 0.08)
+          ;"></a>
+          <h4 style="font-size: 20px;font-family: lora,sans-serif;">ONE PIECE<br>STORY BY EIICHIRO ODA<br><br>Rating : 4.5</h4>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o checked"></span>
+        </div>
+      </div>
+      <div class="row" style="padding-top: 20px;">
+        <div class="column"data-aos="zoom-in">
+          <a href="book19.html"><img src="book19.jpg" alt="book19" style="width:50%;border-radius: 10%;box-shadow:
+            0.2px 0px 6.4px rgba(0, 0, 0, 0.034),
+            2.9px 0px 12.2px rgba(0, 0, 0, 0.042),
+            9.4px 0px 17.6px rgba(0, 0, 0, 0.046),
+            22px 0px 23.4px rgba(0, 0, 0, 0.05),
+            46.2px 0px 32.5px rgba(0, 0, 0, 0.058),
+            108px 0px 64px rgba(0, 0, 0, 0.08)
+          ;"></a>
+          <h4 style="font-size: 20px;font-family: lora,sans-serif;">DEMON SLAYER<br>KIMETSU NO YAIBA<br><br>Rating : 5.0</h4>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+        </div>
+        <div class="column"data-aos="zoom-in">
+          <a href="book20.html"><img src="book20.jpg" alt="book20" style="width:50%;border-radius: 10%;border-radius: 10%;box-shadow:
+            0.2px 0px 6.4px rgba(0, 0, 0, 0.034),
+            2.9px 0px 12.2px rgba(0, 0, 0, 0.042),
+            9.4px 0px 17.6px rgba(0, 0, 0, 0.046),
+            22px 0px 23.4px rgba(0, 0, 0, 0.05),
+            46.2px 0px 32.5px rgba(0, 0, 0, 0.058),
+            108px 0px 64px rgba(0, 0, 0, 0.08)
+          ;"></a>
+          <h4 style="font-size: 20px;font-family: lora,sans-serif;">NARUTO<br>MASASHI KISHIMOTO<br><br>Rating : 4.0</h4>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+        </div>
+        <div class="column"data-aos="zoom-in">
+          <a href="book21.html"><img src="book21.jpg" alt="book21" style="width:50%;border-radius: 10%;border-radius: 10%;box-shadow:
+            0.2px 0px 6.4px rgba(0, 0, 0, 0.034),
+            2.9px 0px 12.2px rgba(0, 0, 0, 0.042),
+            9.4px 0px 17.6px rgba(0, 0, 0, 0.046),
+            22px 0px 23.4px rgba(0, 0, 0, 0.05),
+            46.2px 0px 32.5px rgba(0, 0, 0, 0.058),
+            108px 0px 64px rgba(0, 0, 0, 0.08)
+          ;"></a>
+          <h4 style="font-size: 20px;font-family: lora,sans-serif;">SPY X FAMILY<br>TATSUYA ENDO<br><br>Rating : 3.5</h4>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o checked"></span>
+<span class="fa fa-star"></span>
+        </div>
+      </div>
+    </div></center>
+</body>
+<footer>
+    <div class="container">
+      <p>Copyright © 2023 Comic Website. All rights reserved.</p>
+      <nav>
+        <ul>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="tel:+916379974470">Contact Us</a></li>
+          <li><a href="policy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+        </ul>
+      </nav>
+      <p>Follow Us:</p>
+      <ul class="social-icons">
+        <li><a href="https://www.facebook.com/profile.php?id=100027798282864"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="www.twitter.com"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://www.instagram.com/_nandhu._07/"><i class="fa fa-instagram"></i></a></li>
+      </ul>
+      <p>Subscribe to our newsletter for the latest updates and promotions.</p>
+</footer> 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</html>

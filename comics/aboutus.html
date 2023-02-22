@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+         .nav img{
+            float: left;
+            width: 55px;
+            height: 55px;
+            background:rgb(174, 174, 174);
+            border-radius:50%;
+        }
+        h1{
+            padding-left:1em ;
+            padding-right: 41em;
+        }
+        .nav{
+            display:flex;
+            background: #000000;  
+background: -webkit-linear-gradient(to right, #434343, #000000); 
+background: linear-gradient(to right, #434343, #000000);
+height: 55px;
+        }
+        .nav a{
+            float:left;
+            color:white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .nav a:hover{
+            background-color:white;
+            color:black;
+        }
+        .nav a.active{
+            background-color:whitesmoke;
+            color:black
+        }
+        .about-section {
+  padding: 2em;
+  text-align: center;
+}
+
+.about-section h1 {
+  text-align:center;
+  padding: 0;
+  font-size: 40px;
+  margin-bottom: 1em;
+}
+
+.about-section p {
+  font-size: 1.5em;
+  margin-bottom: 2em;
+}
+
+.about-section h2 {
+  font-size: 2em;
+  margin-bottom: 2em;
+}
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.member {
+  width: 25%;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.member img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 1em;
+}
+
+.member h3 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.member p {
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+body::-webkit-scrollbar {
+    width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px black;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 20px;
+  outline: 1px solid whitesmoke;
+}
+    </style>
+    <title>WEBTOONS</title>
+</head>
+<body style=" background: #8e9eab; 
+background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);
+background: linear-gradient(to right, #eef2f3, #8e9eab);margin: 0;padding: 0;">
+  <div class="nav">
+    <img src="logo.png" alt="logo">
+    <h1 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;font-size: 20px;color: white;padding-top: 5px;"><i>WEBTOONS</i></h1>
+    <a class="active" href="home.html">Home</a>
+    <a href="signup.html">SignUp</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="terms.html">Terms of Service</a>
+</div>
+    <div class="about-section">
+        <h1>About Us</h1>
+        <p>Comic Website is a platform dedicated to comic fans, where you can find all the latest and greatest comics in one place. Our mission is to provide a seamless experience for comic lovers and make it easier for them to discover new titles and creators. </p>
+        <p>We have a team of passionate comic enthusiasts who work tirelessly to bring you the best content possible. Our platform is constantly evolving, and we strive to provide a rich and engaging experience for our users. </p>
+        <h2>My Profile</h2>
+        <div class="team-members">
+          <div class="member">
+            <img src="IMG_20230212_220801.jpg" alt="Myprofile">
+            <h3>Nandha Kumar MS</h3>
+            <p>Founder and CEO</p>
+          </div>
+        </div>    
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .hi{
+    border: none;
+    padding: 50px;
+    height: 520px;
+    width:400px;
+    background-color:rgba(0, 0, 0, 0.329);
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding-top: 20px;
+}
+fieldset{
+    background-color: rgba(0, 0, 0, 0.378);
+}
+[type="button"]{
+color:white;
+background-color: #4CAF50;
+background-size: 40%;
+padding: 10px 15px;
+border-radius: 20px;
+border: none;
+}
+  video#backvideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+  }
+  h3{
+    color:white;
+  }
+    </style>
+    <title>WEBTOONS</title>
+</head> 
+<body>
+    <video id="backvideo" autoplay loop muted>
+        <source src="This is 8K HDR Anime _ Tengen vs Gyutaro Fight Scene【8K HDR】(1080P_HD).mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>  
+    <center><h1 style="padding-top:20px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;color: white;">WEBTOONS</h1></center>
+    <center><br><br><div class="hi"><form>
+        <center><h1 style="padding: 0;margin: 0;color:white">Sign Up</h1></center>
+        <fieldset><legend ><i><h3>Username:</h3></i></legend><input type="text" placeholder="   name" required id="username" style="border:none;font-weight: bold;border-radius: 10px;height:30px;">
+       </fieldset>
+        <fieldset><legend><i><h3>Create password:</h3></i></legend><input type="password" placeholder="   password" required id="password" maxlength="6" minlength="6"style="border:none;font-weight: bold;border-radius: 10px;height:30px;">
+       </fieldset>   <fieldset><legend><i><h3>Re-enter password:</h3></i></legend><input type="password" placeholder="   password" required id="confirm-password" maxlength="6" minlength="6"style="border:none;font-weight: bold;border-radius: 10px;height:30px;">
+        </fieldset><br>
+        <br>
+           <input type="button" value="sign up" onclick="validateSignup()"><hr><i><h3>If already have an account:</h3></i>
+            </form><a href="signin.html">
+                <input type="button" value="Sign in"></a>
+    </center></div>
+    <script src="signup.js"></script>
+</body>
+</html>

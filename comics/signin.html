@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signin.css">
+    <style>
+        .op{
+    border:none;
+background-color:rgba(0, 0, 0, 0.329);
+height: 390px;
+width:450px;
+padding:20px 20px 20px 20px;
+border-radius:20px;
+}
+[type="button"]
+{
+    color:white;
+    background-color: #4CAF50;
+    background-size: 40%;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+}
+fieldset{
+    background-color: rgba(0, 0, 0, 0.378);
+    width:300px;
+    height:105px;
+}
+form{
+    font-size:20px;
+}
+        video#backvideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+  }
+  h3{
+    color: white;
+  }
+    </style>
+    <title>WEBTOONS</title>
+</head>
+
+<body>
+    <video id="backvideo" autoplay loop muted>
+        <source src="This is 8K HDR Anime _ Tengen vs Gyutaro Fight Scene【8K HDR】(1080P_HD).mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>  
+  <center><h1 style="padding-top:20px;padding-bottom:50px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;color: white;">WEBTOONS</h1></center>
+  <center><div class="op">
+    <form>
+    <center><h1 style="padding: 0;margin: 0;color:white">Sign Up</h1></center>
+    <fieldset><legend><h3>Username:</h3></legend><input type="text" placeholder="  name" required id="user" style="border:none;font-weight: bold;border-radius: 10px;height:30px;"></fieldset>
+    <fieldset><legend><h3>Password</h3></legend><input type="password" placeholder="  password" required id="pass" style="border:none;font-weight: bold;border-radius: 10px;height:30px;"></fieldset>
+    <br><br><input type="button" value="Sign in" onclick="login()">
+    </form>
+    </div></center>
+    <script src="signin.js"></script>
+</body>
+</html>
